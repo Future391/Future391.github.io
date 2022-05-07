@@ -420,6 +420,142 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pengxb.site/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Future's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/" itemprop="url">linux常用命令之奇技淫巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-06-26T15:28:36+08:00">
+                2021-06-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="1-根据类名查找某个目录下的jar包"><a href="#1-根据类名查找某个目录下的jar包" class="headerlink" title="1.根据类名查找某个目录下的jar包"></a>1.根据类名查找某个目录下的jar包</h1><p>使用场景：程序抛出ClassNotFound异常，需要定位Class所在的jar包</p>
+<h2 id="方式一：find"><a href="#方式一：find" class="headerlink" title="方式一：find"></a>方式一：find</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1.LIB_DIR替换成集群包安装目录，如果不知道具体目录，则可用&quot;/&quot;替代，但需要切换到root用户或有sudo权限的用户。</span></span><br><span class="line">LIB_DIR=<span class="string">&quot;/&quot;</span></span><br><span class="line"><span class="comment">#2.KEYWORD替换成具体的类</span></span><br><span class="line">KEYWORD=<span class="string">&quot;GuardianClientException&quot;</span></span><br><span class="line"><span class="comment">#根据类名查询某个目录下的jar包，同时跳过/proc、/tmp、/boot、/sys等无关目录</span></span><br><span class="line">find <span class="variable">$LIB_DIR</span> \( -path <span class="string">&quot;/proc&quot;</span> -o -path <span class="string">&quot;/tmp&quot;</span> -o -path <span class="string">&quot;/boot&quot;</span> -o -path <span class="string">&quot;/sys&quot;</span> \) -prune -o -<span class="built_in">type</span> f -name \*.jar | <span class="keyword">while</span> <span class="built_in">read</span> line</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">classInfo=`jar -tf <span class="variable">$line</span> | grep <span class="variable">$KEYWORD</span>`</span><br><span class="line">[[ -n <span class="variable">$classInfo</span> ]] &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$line</span> -&gt; <span class="variable">$classInfo</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -470,7 +606,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -483,7 +619,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

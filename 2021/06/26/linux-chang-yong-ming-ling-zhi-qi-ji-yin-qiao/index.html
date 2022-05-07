@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="个人技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://pengxb.site/tags/index.html">
+<meta name="description" content="1.根据类名查找某个目录下的jar包使用场景：程序抛出ClassNotFound异常，需要定位Class所在的jar包 方式一：find12345678910#1.LIB_DIR替换成集群包安装目录，如果不知道具体目录，则可用&quot;&#x2F;&quot;替代，但需要切换到root用户或有sudo权限的用户。LIB_DIR&#x3D;&quot;&#x2F;&quot;#2.KEYWORD替换成具体的类KEYWORD&#x3D;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux常用命令之奇技淫巧">
+<meta property="og:url" content="http://pengxb.site/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/index.html">
 <meta property="og:site_name" content="Future&#39;s Blog">
-<meta property="og:description" content="个人技术博客">
+<meta property="og:description" content="1.根据类名查找某个目录下的jar包使用场景：程序抛出ClassNotFound异常，需要定位Class所在的jar包 方式一：find12345678910#1.LIB_DIR替换成集群包安装目录，如果不知道具体目录，则可用&quot;&#x2F;&quot;替代，但需要切换到root用户或有sudo权限的用户。LIB_DIR&#x3D;&quot;&#x2F;&quot;#2.KEYWORD替换成具体的类KEYWORD&#x3D;&amp;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-05-07T17:10:11.000Z">
-<meta property="article:modified_time" content="2022-05-07T17:14:12.098Z">
+<meta property="og:image" content="http://pengxb.site/images/1651822440863.png">
+<meta property="article:published_time" content="2021-06-26T07:28:36.000Z">
+<meta property="article:modified_time" content="2022-05-07T18:20:56.404Z">
 <meta property="article:author" content="Future">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pengxb.site/images/1651822440863.png">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://pengxb.site/tags/"/>
+  <link rel="canonical" href="http://pengxb.site/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/"/>
 
 
 
 
 
-  <title>标签 | Future's Blog</title>
+  <title>linux常用命令之奇技淫巧 | Future's Blog</title>
   
 
 
@@ -284,40 +287,167 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pengxb.site/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Future's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 2 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/Testing/" style="font-size: 12px; color: #ccc">Testing</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">linux常用命令之奇技淫巧</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-06-26T15:28:36+08:00">
+                2021-06-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="1-根据类名查找某个目录下的jar包"><a href="#1-根据类名查找某个目录下的jar包" class="headerlink" title="1.根据类名查找某个目录下的jar包"></a>1.根据类名查找某个目录下的jar包</h1><p>使用场景：程序抛出ClassNotFound异常，需要定位Class所在的jar包</p>
+<h2 id="方式一：find"><a href="#方式一：find" class="headerlink" title="方式一：find"></a>方式一：find</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1.LIB_DIR替换成集群包安装目录，如果不知道具体目录，则可用&quot;/&quot;替代，但需要切换到root用户或有sudo权限的用户。</span></span><br><span class="line">LIB_DIR=<span class="string">&quot;/&quot;</span></span><br><span class="line"><span class="comment">#2.KEYWORD替换成具体的类</span></span><br><span class="line">KEYWORD=<span class="string">&quot;GuardianClientException&quot;</span></span><br><span class="line"><span class="comment">#根据类名查询某个目录下的jar包，同时跳过/proc、/tmp、/boot、/sys等无关目录</span></span><br><span class="line">find <span class="variable">$LIB_DIR</span> \( -path <span class="string">&quot;/proc&quot;</span> -o -path <span class="string">&quot;/tmp&quot;</span> -o -path <span class="string">&quot;/boot&quot;</span> -o -path <span class="string">&quot;/sys&quot;</span> \) -prune -o -<span class="built_in">type</span> f -name \*.jar | <span class="keyword">while</span> <span class="built_in">read</span> line</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">classInfo=`jar -tf <span class="variable">$line</span> | grep <span class="variable">$KEYWORD</span>`</span><br><span class="line">[[ -n <span class="variable">$classInfo</span> ]] &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$line</span> -&gt; <span class="variable">$classInfo</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>优点：只匹配jar包文件且不用扫描所有目录<br>缺点：依次遍历处理jar包，速度比较慢</p>
+<h2 id="方式二：grep"><a href="#方式二：grep" class="headerlink" title="方式二：grep"></a>方式二：grep</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#LIB_DIR替换成集群包安装目录，如果不知道具体目录，则可用&quot;/&quot;替代，但需要切换到root用户或有sudo权限的用户。</span></span><br><span class="line">LIB_DIR=<span class="string">&quot;/&quot;</span></span><br><span class="line">grep -r GuardianClientException <span class="variable">$LIB_DIR</span></span><br></pre></td></tr></table></figure>
+<p>优点：速度较方式一快<br>缺点：需要匹配所有文件，当目录文件特别多的时候，速度也会很慢</p>
+<h1 id="2-删除apache-livy所有session"><a href="#2-删除apache-livy所有session" class="headerlink" title="2.删除apache livy所有session"></a>2.删除apache livy所有session</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除所有livy session</span></span><br><span class="line"><span class="comment">#livyServer主机</span></span><br><span class="line">livyHost=192.168.1.137</span><br><span class="line"><span class="comment">#livyServer端口</span></span><br><span class="line">livyPort=8998</span><br><span class="line">curl -X GET <span class="variable">$livyHost</span>:<span class="variable">$livyPort</span>/sessions | python -m json.tool | grep <span class="string">&#x27;&quot;id&quot;:&#x27;</span> | grep -Eo <span class="string">&quot;[0-9]+&quot;</span> | <span class="keyword">while</span> <span class="built_in">read</span> sessionId</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">curl -X DELETE <span class="variable">$livyHost</span>:<span class="variable">$livyPort</span>/sessions/<span class="variable">$sessionId</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;session: <span class="variable">$sessionId</span> 已删除&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-查找某个进程中CPU占用TopN的线程信息"><a href="#3-查找某个进程中CPU占用TopN的线程信息" class="headerlink" title="3.查找某个进程中CPU占用TopN的线程信息"></a>3.查找某个进程中CPU占用TopN的线程信息</h1><p>使用场景：线上环境某个进程CPU占用率非常高，需要找到是哪个业务线程导致的</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1.查看某个进程中CPU使用Top10的线程，进程ID替换为具体值</span></span><br><span class="line">ps -mp 进程ID -o THREAD,tid,time | <span class="built_in">sort</span> -rk2 | <span class="built_in">head</span> -11 | awk -F<span class="string">&#x27; &#x27;</span> <span class="string">&#x27;&#123;if($8 ~ /[0-9]+/) &#123;printf &quot;%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%x\t%s\n&quot;,$1,$2,$3,$4,$5,$6,$7,$8,$8,$9&#125; else if($8 == &quot;TID&quot;) &#123;print $1&quot;\t&quot;$2&quot;\t&quot;$3&quot;\t&quot;$4&quot;\t&quot;$5&quot;\t&quot;$6&quot;\t&quot;$7&quot;\t&quot;$8&quot;\tTID-Hex\t&quot;$9&#125; else&#123;print $1&quot;\t&quot;$2&quot;\t&quot;$3&quot;\t&quot;$4&quot;\t&quot;$5&quot;\t&quot;$6&quot;\t&quot;$7&quot;\t&quot;$8&quot;\t&quot;$8&quot;\t&quot;$9&#125;&#125;&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#2.查看进程中具体线程的信息，进程ID和线程ID替换成对应的值</span></span><br><span class="line">jstack 进程ID | grep -A 10 16进制线程ID</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-查看进程启动时间和运行时间"><a href="#4-查看进程启动时间和运行时间" class="headerlink" title="4.查看进程启动时间和运行时间"></a>4.查看进程启动时间和运行时间</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进程启动时间</span></span><br><span class="line">processId=进程ID</span><br><span class="line">lstart=`ps -eo pid,lstart | grep <span class="string">&quot;<span class="variable">$&#123;processId&#125;</span>.*&quot;</span> | grep -v grep | awk -F<span class="string">&#x27; &#x27;</span> <span class="string">&#x27;&#123;print $2,$3,$4,$5,$6&#125;&#x27;</span>`</span><br><span class="line"><span class="built_in">test</span> -n <span class="string">&quot;<span class="variable">$lstart</span>&quot;</span> &amp;&amp; lstart=`<span class="built_in">date</span> -d <span class="string">&quot;<span class="variable">$lstart</span>&quot;</span> +<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>`</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;$进程启动时间: <span class="variable">$lstart</span>&quot;</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#进程运行时间</span></span><br><span class="line">etime=`ps -eo pid,etime | grep <span class="string">&quot;<span class="variable">$&#123;processId&#125;</span>.*&quot;</span> | grep -v grep | awk -F<span class="string">&#x27; &#x27;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>`</span><br><span class="line"><span class="built_in">test</span> -n <span class="string">&quot;<span class="variable">$etime</span>&quot;</span> &amp;&amp; etime=`<span class="built_in">echo</span> <span class="variable">$etime</span> | sed <span class="string">&#x27;s/-/d /g&#x27;</span>`</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;$进程运行时间: <span class="variable">$etime</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/images/1651822440863.png"></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/05/08/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -360,8 +490,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -426,6 +565,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%A0%B9%E6%8D%AE%E7%B1%BB%E5%90%8D%E6%9F%A5%E6%89%BE%E6%9F%90%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84jar%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">1.根据类名查找某个目录下的jar包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%9Afind"><span class="nav-number">1.1.</span> <span class="nav-text">方式一：find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%9Agrep"><span class="nav-number">1.2.</span> <span class="nav-text">方式二：grep</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%88%A0%E9%99%A4apache-livy%E6%89%80%E6%9C%89session"><span class="nav-number">2.</span> <span class="nav-text">2.删除apache livy所有session</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%9F%A5%E6%89%BE%E6%9F%90%E4%B8%AA%E8%BF%9B%E7%A8%8B%E4%B8%ADCPU%E5%8D%A0%E7%94%A8TopN%E7%9A%84%E7%BA%BF%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="nav-number">3.</span> <span class="nav-text">3.查找某个进程中CPU占用TopN的线程信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E5%92%8C%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4"><span class="nav-number">4.</span> <span class="nav-text">4.查看进程启动时间和运行时间</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -590,9 +745,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://pengxb.site/tags/index.html';
-          this.page.identifier = 'tags/index.html';
-          this.page.title = '标签';
+          this.page.url = 'http://pengxb.site/2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/';
+          this.page.identifier = '2021/06/26/linux-chang-yong-ming-ling-zhi-qi-ji-yin-qiao/';
+          this.page.title = 'linux常用命令之奇技淫巧';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Future.disqus.com/embed.js';
